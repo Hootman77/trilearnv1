@@ -62,7 +62,7 @@ export default function FlashcardTest() {
     setIsFlipped(false);
     //Updating the value of frontEl by + 10
     frontEL.current = (frontEL.current + 10);
-    setIndex = (index + 10);
+    setIndex(index + 10);
     // If statement to determine if the current value of frontEL is greater than the length of the amount of cards
     if (frontEL.current > index) {
         //Setting the current value of frontEl to the value of current card length, this prevents loading cards that dont exist
