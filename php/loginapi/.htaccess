@@ -1,0 +1,12 @@
+# Altering the APACHE settings to modify our website configuration
+
+RewriteEngine On
+
+ # Handle Front Controller...
+ 
+#Condition to find if the file name exists 
+RewriteCond %{REQUEST_FILENAME} !-d
+#Condition to find if the directory name exists
+RewriteCond %{REQUEST_FILENAME} !-f
+#Redirects to index.php if these conditions dont exist
+RewriteRule ^ index.php [L]
