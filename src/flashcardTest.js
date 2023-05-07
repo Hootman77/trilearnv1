@@ -48,7 +48,7 @@ export default function FlashcardTest() {
               //Printing the value of singleRow to console
               console.log(singleRow);
               
-              index.current =(frontEl.current)
+              index.current =(frontEL.current)
               
     })}
               
