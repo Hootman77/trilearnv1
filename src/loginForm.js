@@ -86,7 +86,7 @@ export default function LoginForm() {
     //If user and pass are not empty then run this if statement
     if(user !== "" && pass != ""){
       //creating a variable called url with the value of the api link
-      var url = "http://eu-cdbr-west-03.cleardb.net/checkuserapi/heroku_8c69a3155a75dd3/index.php/";
+      var url = "https://trilearnv1.herokuapp.com/index2.php/";
       //Creating a variable called headers with the value of the headers
       var headers = {
           "Accept": "application/json",
