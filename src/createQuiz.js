@@ -44,7 +44,7 @@ export default function CreateQuiz() {
             setError(false);
             //Setting message to record successfull
             //Using axios to post the inputs to the php api and then getting the response and posting the data to console
-            axios.post("https://trilearnv1.herokuapp.com/index4.php", inputs).then(function(response){     
+            axios.post("https://trilearnv1.herokuapp.com/index5.php", inputs).then(function(response){     
             console.log(response.data)
             setMsg("Record created successfully")
     }).catch((error) => {
