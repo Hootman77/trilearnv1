@@ -47,7 +47,8 @@ export default function FlashcardTest() {
               setRowData(singleRow);
               //Printing the value of singleRow to console
               console.log(singleRow);
-              setIndex(row.deck_id);
+              
+              setIndex(frontEL.current);
               
     })}
               
@@ -64,6 +65,7 @@ export default function FlashcardTest() {
     // If statement to determine if the current value of frontEL is greater than the length of the amount of cards
     if (frontEL.current > index) {
         //Setting the current value of frontEl to the value of current card length, this prevents loading cards that dont exist
+        setIndex(frontEL.current);
         frontEL.current = index
         //Printing the value of frontEl to console
         console.log(frontEL)
