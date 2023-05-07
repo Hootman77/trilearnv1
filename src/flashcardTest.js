@@ -64,7 +64,7 @@ export default function FlashcardTest() {
     frontEL.current = (frontEL.current + 10);
     index.current = (index.current + 10)
     // If statement to determine if the current value of frontEL is greater than the length of the amount of cards
-    if (rowData = "") {
+    if (rowData === "") {
         //Setting the current value of frontEl to the value of current card length, this prevents loading cards that dont exist
         frontEL.current = (frontEL.current - 10)
         index.current = (index.current - 10)
