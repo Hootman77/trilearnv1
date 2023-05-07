@@ -9,9 +9,9 @@ export default function FlashcardTest() {
 
     //Creating a constant called frontEl and setting it to useRef value of 1, this is used to set the current value of the flash card
     const frontEL = useRef(1)
-
+    const index = useRef(1)
     
-    const [index, setIndex] = useState();
+
     //Creating a constant with rowData array using usestate
     const [rowData, setRowData] = useState([]);
     //Creating a constant with isFlipped using usestate
@@ -48,7 +48,7 @@ export default function FlashcardTest() {
               //Printing the value of singleRow to console
               console.log(singleRow);
               
-              setIndex(frontEL.current);
+              index.current =(frontEl.current)
               
     })}
               
@@ -62,12 +62,12 @@ export default function FlashcardTest() {
     setIsFlipped(false);
     //Updating the value of frontEl by + 10
     frontEL.current = (frontEL.current + 10);
-    setIndex(index + 10);
+    index.current = (index.current + 10)
     // If statement to determine if the current value of frontEL is greater than the length of the amount of cards
     if (frontEL.current > index) {
         //Setting the current value of frontEl to the value of current card length, this prevents loading cards that dont exist
-        setIndex(frontEL.current);
-        frontEL.current = index
+        index.current = index.current
+        frontEL.current = index.current
         //Printing the value of frontEl to console
         console.log(frontEL)
     } 
@@ -85,7 +85,7 @@ export default function FlashcardTest() {
     setIsFlipped(false);
      //Updating the value of frontEl by - 10
     frontEL.current = (frontEL.current - 10);
-    setIndex(index - 10);
+    index.current = (index.current - 10);
     // If statement to determine if the current value of frontEL is less than or equal to zero
     if (frontEL.current <= 0) {
       //Sets frontEls current value back to one to ensure that frontEl value doesnt stay below zero
