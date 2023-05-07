@@ -57,8 +57,8 @@ export default function FlashcardTest() {
     getCards();
     //Setting the value of is flipped to false so that the answer isnt showing
     setIsFlipped(false);
-    //Updating the value of frontEl by + 1
-    frontEL.current = (frontEL.current + 1);
+    //Updating the value of frontEl by + 10
+    frontEL.current = (frontEL.current + 10);
     // If statement to determine if the current value of frontEL is greater than the length of the amount of cards
     if (frontEL.current > cards.length) {
         //Setting the current value of frontEl to the value of current card length, this prevents loading cards that dont exist
@@ -78,8 +78,8 @@ export default function FlashcardTest() {
     getCards()
     //Setting the value of is flipped to false so that the answer isnt showing
     setIsFlipped(false);
-     //Updating the value of frontEl by - 1
-    frontEL.current = (frontEL.current - 1);
+     //Updating the value of frontEl by - 10
+    frontEL.current = (frontEL.current - 10);
     // If statement to determine if the current value of frontEL is less than or equal to zero
     if (frontEL.current <= 0) {
       //Sets frontEls current value back to one to ensure that frontEl value doesnt stay below zero
