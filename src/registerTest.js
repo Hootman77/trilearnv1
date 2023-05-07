@@ -64,7 +64,7 @@ export default function () {
           //If user and pass are not empty then run this if statement
         if(user !== "" && pass !== ""){
           //creating a variable called url with the value of the api link
-            var url = "http://eu-cdbr-west-03.cleardb.net/loginapi/heroku_8c69a3155a75dd3/user_details";
+            var url = "https://trilearnv1.herokuapp.com/index3.php";
             //Creating a variable called headers with the value of the headers
             var headers = {
                 "Accept": "application/json",
@@ -122,7 +122,7 @@ export default function () {
     //Creating a function to check if the username already exists
         function checkUser(){
         //creating a variable called url with the value of the api link
-        var url = "http://eu-cdbr-west-03.cleardb.net/checkuserapi/heroku_8c69a3155a75dd3/checkuser.php";
+        var url = "https://trilearnv1.herokuapp.com/checkuser.php";
         //Creating a variable called headers with the value of the headers
         var headers = {
             "Accept": "application/json",
