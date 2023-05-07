@@ -32,7 +32,7 @@ export default function FlashcardTest() {
   function getCards() {
     //Calling axios to send a Get request to the php API and then getting the response from the request  
     axios
-      .get(" https://trilearnv1.herokuapp.com/index.php").then(function(response){
+      .get(" https://trilearnv1.herokuapp.com/index4.php").then(function(response){
               //Setting cards to the response data
               setCards(response.data)
               //Creating a data constant with the value of the response data
